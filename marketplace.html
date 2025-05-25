@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTechNG Market</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>AgriTechNG</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="sensors.html">Sensors</a></li>
+                <li><a href="blockchain.html">Supply Chain</a></li>
+                <li><a href="marketplace.html" class="active">Market</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="animate__animated animate__fadeIn">
+        <h2>Marketplace</h2>
+        <div class="product-grid animate__animated animate__fadeInUp">
+            <div class="product-card">
+                <img src="maize.jpg" alt="Maize">
+                <h3>Maize</h3>
+                <p>100kg - ₦50,000</p>
+                <button onclick="buyProduct('Maize', 50000)"><img src="buy-icon.png" alt="Buy Icon"> Buy</button>
+                <button onclick="sellProduct('Maize', 50000)"><img src="sell-icon.png" alt="Sell Icon"> Sell</button>
+            </div>
+            <div class="product-card">
+                <img src="rice.jpg" alt="Rice">
+                <h3>Rice</h3>
+                <p>50kg - ₦30,000</p>
+                <button onclick="buyProduct('Rice', 30000)"><img src="buy-icon.png" alt="Buy Icon"> Buy</button>
+                <button onclick="sellProduct('Rice', 30000)"><img src="sell-icon.png" alt="Sell Icon"> Sell</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

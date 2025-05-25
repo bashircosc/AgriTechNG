@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTechNG Supply Chain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>AgriTechNG</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="sensors.html">Sensors</a></li>
+                <li><a href="blockchain.html" class="active">Supply Chain</a></li>
+                <li><a href="marketplace.html">Market</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="animate__animated animate__fadeIn">
+        <h2>Supply Chain Transactions</h2>
+        <img src="supply-chain.jpg" alt="Supply Chain" class="side-image animate__animated animate__slideInRight">
+        <ul id="transactions" class="animate__animated animate__fadeInUp">
+            <li>Sold 50kg of maize to Buyer X on May 20, 2025 - Delivered</li>
+            <li>Bought 100kg of rice from Farmer Y on May 18, 2025 - In Transit</li>
+        </ul>
+        <button onclick="fetchTransactions()" class="animate__animated animate__pulse"><img src="fetch-icon.png" alt="Fetch Icon"> Fetch Latest Transactions</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

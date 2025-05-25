@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTechNG Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>AgriTechNG</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="sensors.html">Sensors</a></li>
+                <li><a href="blockchain.html">Supply Chain</a></li>
+                <li><a href="marketplace.html">Market</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="animate__animated animate__fadeIn">
+        <h2>Welcome to AgriTechNG</h2>
+        <p>Empowering farmers with smart technology.</p>
+        <img src="farmer-field.jpg" alt="Farmer in field" class="hero-image animate__animated animate__zoomIn">
+        <div id="map" style="height: 300px; width: 100%; margin: 20px 0;"></div>
+        <div class="buttons animate__animated animate__bounceIn">
+            <button onclick="window.location.href='predict.html'"><img src="predict-icon.png" alt="Predict Icon"> Predict Crops</button>
+            <button onclick="window.location.href='sensors.html'"><img src="sensor-icon.png" alt="Sensor Icon"> View Sensors</button>
+            <button onclick="window.location.href='blockchain.html'"><img src="chain-icon.png" alt="Chain Icon"> Check Supply Chain</button>
+            <button onclick="window.location.href='marketplace.html'"><img src="market-icon.png" alt="Market Icon"> Go to Market</button>
+        </div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

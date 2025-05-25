@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTechNG Sensors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>AgriTechNG</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="predict.html">Predict</a></li>
+                <li><a href="sensors.html" class="active">Sensors</a></li>
+                <li><a href="blockchain.html">Supply Chain</a></li>
+                <li><a href="marketplace.html">Market</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="animate__animated animate__fadeIn">
+        <h2>Sensor Dashboard</h2>
+        <div class="sensor-grid animate__animated animate__fadeInUp">
+            <div class="sensor-card">
+                <h3>Soil Moisture</h3>
+                <p id="soilMoisture">45%</p>
+                <canvas id="moistureChart" width="200" height="100"></canvas>
+            </div>
+            <div class="sensor-card">
+                <h3>Temperature</h3>
+                <p id="temperature">28°C</p>
+                <canvas id="tempChart" width="200" height="100"></canvas>
+            </div>
+            <div class="sensor-card">
+                <h3>Humidity</h3>
+                <p id="humidity">60%</p>
+                <canvas id="humidityChart" width="200" height="100"></canvas>
+            </div>
+        </div>
+        <button onclick="refreshSensors()" class="animate__animated animate__pulse"><img src="refresh-icon.png" alt="Refresh Icon"> Refresh</button>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
